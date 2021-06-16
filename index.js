@@ -79,7 +79,7 @@ http.createServer(function(req, res) {
             
             //save or update the cart item
             await cartItem.save();
-            res.writeHead(200 ,{ 'Content-Type': 'plain/text' },"saved")
+            res.writeHead(200 ,{ 'Content-Type': 'plain/text' })
             res.end("saved successfully");
 
         } catch (err) {
