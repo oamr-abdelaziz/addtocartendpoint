@@ -1,4 +1,4 @@
-# //The main purpose of this reposatory is the addtocart end point which searches in products for the product, add it to cart or increase its quantity in the cart. //You can try the endpoint within the nodejs project which gives you three endpoints:- //1)fetch products //2)fetch cart items //3)add to cart
+# The main purpose of this reposatory is the addtocart end point which searches in products for the product, add it to cart or increase its quantity in the cart. You can try the endpoint within the nodejs project which gives you three endpoints:- 1)fetch products 2)fetch cart items 3)add to cart
 
 //Here is the addtocart endpoint alone also:-
 
