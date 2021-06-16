@@ -1,17 +1,17 @@
 # //The main purpose of this reposatory is the addtocart end point which searches in products for the product, add it to cart or increase its quantity in the cart. //You can try the endpoint within the nodejs project which gives you three endpoints:- //1)fetch products //2)fetch cart items //3)add to cart
 
 //Here is the addtocart endpoint alone also:-
-{
-if (req.url === '/cart/addtocart'  && req.method=="POST") {
-        let body = "";
-        req.on("data",data=>{
-            //request data is the code of the product, the size and its quantity
-            body+=data;
-            cartItems(req,res,body);   
-        });
-        req.on("end",()=>{     
-                // const { code , size , quantity } = decode(body);
-                // console.log("ended", code,size,quantity);
+
+        if (req.url === '/cart/addtocart'  && req.method=="POST") {
+                let body = "";
+                req.on("data",data=>{
+                    //request data is the code of the product, the size and its quantity
+                    body+=data;
+                    cartItems(req,res,body);   
+                });
+                req.on("end",()=>{     
+                        // const { code , size , quantity } = decode(body);
+                        // console.log("ended", code,size,quantity);
         });
 
       async function cartItems(req,res,body){
@@ -68,4 +68,3 @@ if (req.url === '/cart/addtocart'  && req.method=="POST") {
         }
       }
     }
-}
