@@ -2,7 +2,7 @@
 
 //Here is the addtocart endpoint alone also:-
 
-        if (req.url === '/cart/addtocart'  && req.method=="POST") {
+    if (req.url === '/cart/addtocart'  && req.method=="POST") {
                 let body = "";
                 req.on("data",data=>{
                     //request data is the code of the product, the size and its quantity
@@ -12,7 +12,7 @@
                 req.on("end",()=>{     
                         // const { code , size , quantity } = decode(body);
                         // console.log("ended", code,size,quantity);
-        });
+                });
 
       async function cartItems(req,res,body){
 
